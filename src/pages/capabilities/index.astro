@@ -1,0 +1,33 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+const items = [
+  ["Network Discovery", "Discover devices, services, interfaces, IP ranges, and infrastructure components."],
+  ["Infrastructure Documentation", "Build structured documentation for sites, devices, links, services, and assets."],
+  ["Configuration Management", "Store, compare, and track device configurations with version history."],
+  ["Automation Framework", "Automate repetitive network operations and engineering workflows."],
+  ["Operational Reporting", "Generate professional reports for audits, assessments, and management."],
+  ["Operational Intelligence", "Use embedded intelligence for analysis, recommendations, and decision support."]
+];
+---
+
+<MainLayout title="Capabilities | NetOps OS">
+  <Header />
+  <main class="page">
+    <p class="label">Capabilities</p>
+    <h1>Core Capabilities</h1>
+    <p class="lead">NetOps OS brings key network operations functions into one engineering workbench.</p>
+
+    <div class="card-grid">
+      {items.map(([title, text]) => (
+        <article class="card">
+          <h3>{title}</h3>
+          <p>{text}</p>
+        </article>
+      ))}
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

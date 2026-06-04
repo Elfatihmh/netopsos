@@ -1,0 +1,24 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<MainLayout title="About | NetOps OS">
+  <Header />
+  <main class="page">
+    <p class="label">About</p>
+    <h1>About NetOps OS</h1>
+    <p class="lead">
+      NetOps OS is a long-term initiative to build a practical Network Operations Workbench for engineers, infrastructure teams, NOC teams, managed service providers, and students.
+    </p>
+
+    <div class="card-grid">
+      <article class="card"><h3>Mission</h3><p>Reduce operational complexity by bringing essential NetOps workflows into one structured workbench.</p></article>
+      <article class="card"><h3>Audience</h3><p>Designed for network engineers, infrastructure engineers, system administrators, NOC teams, and learners.</p></article>
+      <article class="card"><h3>Direction</h3><p>The project will start small, then evolve into a modular, vendor-neutral control center.</p></article>
+      <article class="card"><h3>Repository</h3><p>Development and public progress will be tracked on GitHub.</p></article>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

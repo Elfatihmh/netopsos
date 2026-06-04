@@ -1,0 +1,23 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<MainLayout title="Roadmap | NetOps OS">
+  <Header />
+  <main class="page">
+    <p class="label">Roadmap</p>
+    <h1>Project Roadmap</h1>
+    <p class="lead">The project will grow step by step from public identity into a practical NetOps Control Center.</p>
+
+    <div class="card-grid">
+      <article class="card"><h3>Phase 1</h3><p>Website, documentation, project identity, and public roadmap.</p></article>
+      <article class="card"><h3>Phase 2</h3><p>Network discovery engine and inventory foundation.</p></article>
+      <article class="card"><h3>Phase 3</h3><p>Configuration backup, version history, and change visibility.</p></article>
+      <article class="card"><h3>Phase 4</h3><p>Reporting engine and operational intelligence services.</p></article>
+      <article class="card"><h3>Phase 5</h3><p>Unified NetOps Control Center with modular integrations.</p></article>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

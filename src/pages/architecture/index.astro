@@ -1,0 +1,24 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<MainLayout title="Architecture | NetOps OS">
+  <Header />
+  <main class="page">
+    <p class="label">Architecture</p>
+    <h1>System Architecture</h1>
+    <p class="lead">
+      NetOps OS is planned as a modular, vendor-neutral system that can evolve from a simple control center into a full operations ecosystem.
+    </p>
+
+    <div class="card-grid">
+      <article class="card"><h3>Frontend</h3><p>Modern web interface for engineers, operators, students, and NOC teams.</p></article>
+      <article class="card"><h3>Backend API</h3><p>Core services for inventory, discovery, configuration, automation, and reports.</p></article>
+      <article class="card"><h3>Database</h3><p>Structured storage for devices, sites, links, configurations, users, and reports.</p></article>
+      <article class="card"><h3>Plugin Layer</h3><p>Future integrations for Cisco, Fortinet, MikroTik, Huawei, Linux, and other systems.</p></article>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>

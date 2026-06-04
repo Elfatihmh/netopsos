@@ -1,0 +1,24 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<MainLayout title="Docs | NetOps OS">
+  <Header />
+  <main class="page">
+    <p class="label">Documentation</p>
+    <h1>Documentation</h1>
+    <p class="lead">
+      Documentation will be published as the project evolves, including installation notes, architecture decisions, development logs, and technical guides.
+    </p>
+
+    <div class="card-grid">
+      <article class="card"><h3>Getting Started</h3><p>Initial setup and project overview will be added soon.</p></article>
+      <article class="card"><h3>Architecture Notes</h3><p>Design decisions and system structure will be documented here.</p></article>
+      <article class="card"><h3>Development Logs</h3><p>Progress updates and milestones will be published regularly.</p></article>
+      <article class="card"><h3>Use Cases</h3><p>Real-world network operations scenarios will be explained.</p></article>
+    </div>
+  </main>
+  <Footer />
+</MainLayout>
